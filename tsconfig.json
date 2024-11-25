@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-device-time-format": ["./src/index"]
+      "rn-date-format": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

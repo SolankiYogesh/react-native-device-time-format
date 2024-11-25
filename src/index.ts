@@ -1,7 +1,7 @@
 import { NativeModules, Platform } from 'react-native';
 
 const LINKING_ERROR =
-  `The package 'react-native-device-time-format' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'rn-date-format' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
@@ -24,6 +24,10 @@ const DeviceTimeFormat = DeviceTimeFormatModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return DeviceTimeFormat.multiply(a, b);
-}
+export const is24HourFormat = (callback: (state: boolean) => void) => {
+  if (isTurboModuleEnabled) {
+    callback(DeviceTimeFormat.is24HourFormat());
+  } else {
+    DeviceTimeFormat.is24HourFormat(callback);
+  }
+};

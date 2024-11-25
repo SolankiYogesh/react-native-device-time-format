@@ -1,21 +1,28 @@
 package com.devicetimeformat
 
-import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactMethod
-import com.facebook.react.bridge.Promise
+import com.facebook.react.bridge.ReactApplicationContext
+import android.text.format.DateFormat;
+import com.facebook.react.bridge.Callback
+
 
 class DeviceTimeFormatModule internal constructor(context: ReactApplicationContext) :
   DeviceTimeFormatSpec(context) {
+  private val reactContext =context
 
   override fun getName(): String {
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
+
+
+  override fun is24HourFormat(): Boolean {
+    return DateFormat.is24HourFormat(reactContext)
+  }
+
   @ReactMethod
-  override fun multiply(a: Double, b: Double, promise: Promise) {
-    promise.resolve(a * b)
+  fun is24HourFormat(callback: Callback) {
+    callback.invoke(DateFormat.is24HourFormat(reactContext))
   }
 
   companion object {

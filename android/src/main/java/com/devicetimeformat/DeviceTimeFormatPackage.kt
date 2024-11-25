@@ -20,13 +20,16 @@ class DeviceTimeFormatPackage : TurboReactPackage() {
     return ReactModuleInfoProvider {
       val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
       val isTurboModule: Boolean = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+      val canOverrideExistingModule = false
+      val needsEagerInit = false
+      val isCxxModule = false
+
       moduleInfos[DeviceTimeFormatModule.NAME] = ReactModuleInfo(
         DeviceTimeFormatModule.NAME,
         DeviceTimeFormatModule.NAME,
-        false,  // canOverrideExistingModule
-        false,  // needsEagerInit
-        true,  // hasConstants
-        false,  // isCxxModule
+        canOverrideExistingModule,  // canOverrideExistingModule
+        needsEagerInit,  // needsEagerInit
+        isCxxModule,  // isCxxModule
         isTurboModule // isTurboModule
       )
       moduleInfos

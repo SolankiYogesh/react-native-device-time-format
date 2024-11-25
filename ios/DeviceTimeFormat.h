@@ -1,4 +1,5 @@
 
+#import <React/RCTUtils.h>
 #ifdef RCT_NEW_ARCH_ENABLED
 #import "RNDeviceTimeFormatSpec.h"
 
