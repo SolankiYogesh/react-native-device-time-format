@@ -12,7 +12,9 @@ With **rn-date-format**, easily detect whether the device is using a **12-hour**
 - ⚡ **Lightweight Library**
 - 🚀 **Supports New Architectures**
 - 📦 **Easy Integration**
-- ⚙️ **High Performance**## Installation
+- ⚙️ **High Performance**
+---
+## Installation
 
 To get started with **rn-date-format**, you can easily install it using **npm** or **yarn**.
 
