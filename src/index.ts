@@ -24,10 +24,4 @@ const DeviceTimeFormat = DeviceTimeFormatModule
       }
     );
 
-export const is24HourFormat = (callback: (state: boolean) => void) => {
-  if (isTurboModuleEnabled) {
-    callback(DeviceTimeFormat.is24HourFormat());
-  } else {
-    DeviceTimeFormat.is24HourFormat(callback);
-  }
-};
+export const is24HourFormat = (): boolean => DeviceTimeFormat.is24HourFormat();

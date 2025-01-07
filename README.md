@@ -27,17 +27,35 @@ To get started with **rn-date-format**, you can easily install it using **npm** 
 
 ### 📦 Using npm:
 
+### 🔧 Using npm:
+
+_For the new architecture only, use:_
+
 ```bash
 npm install rn-date-format
 ```
 
+_For the old architecture, use:_
+
+```bash
+npm install rn-date-format@0.1.3
+```
+
 ### 🔧 Using yarn:
+
+_For the new architecture only, use:_
 
 ```bash
 yarn add rn-date-format
 ```
 
-Once installed, you're all set to start using **rn-date-format** in your project! 🚀
+_For the old architecture, use:_
+
+```bash
+yarn add rn-date-format@0.1.3
+```
+
+---
 
 ## 📝 Usage / Examples
 
@@ -70,7 +88,7 @@ export default MyComponent;
 
 ### 🔍 Explanation:
 
-- **`is24HourFormat(setIs24)`**: This function checks whether the device is using a 24-hour time format and updates the `is24` state accordingly.
+- **`is24HourFormat()`**: This function checks whether the device is using a 24-hour time format and return boolean.
 
 ### 🖼 Output:
 
