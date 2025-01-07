@@ -1,9 +1,9 @@
 ---
-# 🕒 **rn-date-format**
+# 🕒 **react-native-device-time-format**
 
 Small lib to get the device's time format setting in React Native! 🚀
 
-With **rn-date-format**, easily detect whether the device is using a **12-hour** or **24-hour** time format. Perfect for tailoring your app’s time display based on user preferences! 🌍⏰
+With **react-native-device-time-format**, easily detect whether the device is using a **12-hour** or **24-hour** time format. Perfect for tailoring your app’s time display based on user preferences! 🌍⏰
 ---
 
 **Key Features:**
@@ -14,30 +14,37 @@ With **rn-date-format**, easily detect whether the device is using a **12-hour**
 
 ---
 
+### To Do
+
+- [ ] Windows Support
+- [ ] Mac Support
+- [ ] VisionOS Support
+- [ ] tvOS Support
+
 ## Installation
 
-To get started with **rn-date-format**, you can easily install it using **npm** or **yarn**.
+To get started with **react-native-device-time-format**, you can easily install it using **npm** or **yarn**.
 
 ### 📦 Using npm:
 
 ```bash
-npm install rn-date-format
+npm install react-native-device-time-format
 ```
 
 ### 🔧 Using yarn:
 
 ```bash
-yarn add rn-date-format
+yarn add react-native-device-time-format
 ```
 
-Once installed, you're all set to start using **rn-date-format** in your project! 🚀
+Once installed, you're all set to start using **react-native-device-time-format** in your project! 🚀
 
 ## 📝 Usage / Examples
 
-Here's a simple example of how to use **`is24HourFormat`** from **rn-date-format**:
+Here's a simple example of how to use **`is24HourFormat`** from **react-native-device-time-format**:
 
 ```typescript
-import { is24HourFormat } from 'rn-date-format';
+import { is24HourFormat } from 'react-native-device-time-format';
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
